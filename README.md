@@ -16,7 +16,7 @@ The website I developed uses an organised series of dropdown menus to allow the 
 Instead of having to manually count through a convoluted Google Sheet or a physical piece of paper, with a press of a button, a student can see where they need to make changes for a successful academic plan. During a particularly stressful time for many students, this code lifts the pressure and makes their lives easier, helping the SAS community.
 
 Usage Instructions:
-You can access the website itself from this [link][https://keshavrawat-exe.github.io/SAS-Course-Selection-Tool/].
+You can access the website itself from this link: https://keshavrawat-exe.github.io/SAS-Course-Selection-Tool/
 
 Here are some instructions for how to best make use of the features available on the website:
 1. When choosing your courses, first choose the credit which it gives, and then choose the course within it.
