@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #eeeeff; font-family: 'Times New Roman', Times, serif;">
+    <div class="banner"><p>Course Selection Tool</p></div>
+    <h2>Instructions</h2>
+    <p style="margin-left: 10px;">
+    Welcome to the SAS Course Selection Tool, a website designed to help you with planning your course options for High School at SAS. <br>
+    For the best experience, follow these instructions on how to use the site. <br><br>
+    When choosing your courses, first choose the credit which it gives, and then choose the course within it. <br>
+    Please note that some courses are listed under a certain academic area in the PPG, but actually give Elective credits. These courses will be found in the Elective credit section. <br>
+    Grades 9 and 10 must have 7 credits, so be sure to input the details for all rows. <br>
+    Grades 11 and 12 have the option of taking 6 credits. You can leave one row blank if you plan to take 6 credits <br><br>
+    After you're done inputting your course choices for each grade, you can press Save. This will allow you to reload and your course choices will be saved for that year. <br>
+    Please remember to save all grades' course choices before you reload or leave the site.
+    When you have all the courses you need, press the calculate button at the bottom. <br>
+    Then, look at the Things to Change section to find any revisions you need to make to your plan. <br><br>
+    I hope you enjoy using this site, and that it makes your High School course planning experience easier and faster. <br>
+    - Keshav</p>
+    <h2>Grade 9 Courses</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Credit Type</th>
+                <th>First Semester</th>
+                <th>Credit Type</th>
+                <th>Second Semester</th>
+            </tr>
+        </thead>
+        <tbody id="courseTable9">
+            <!-- Rows will be populated by JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Save Button -->
+    <button id="saveButton9" class='save-button'>Save</button>
+    <!-- Clear Button -->
+    <button id="clearButton9" class='clear-button' onclick="clearGradeData(9);">Clear</button>
+
+    <h2>Grade 10 Courses</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Credit Type</th>
+                <th>First Semester</th>
+                <th>Credit Type</th>
+                <th>Second Semester</th>
+            </tr>
+        </thead>
+        <tbody id="courseTable10">
+            <!-- Rows will be populated by JavaScript -->
+        </tbody>
+    </table>
+    <!-- Save Button -->
+    <button id="saveButton10" class='save-button'>Save</button>
+    <!-- Clear Button -->
+    <button id="clearButton10" class='clear-button' onclick="clearGradeData(10);">Clear</button>
+
+    <h2>Grade 11 Courses</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Credit Type</th>
+                <th>First Semester</th>
+                <th>Credit Type</th>
+                <th>Second Semester</th>
+            </tr>
+        </thead>
+        <tbody id="courseTable11">
+            <!-- Rows will be populated by JavaScript -->
+        </tbody>
+    </table>
+    <!-- Save Button -->
+    <button id="saveButton11" class='save-button'>Save</button>
+    <!-- Clear Button -->
+    <button id="clearButton11" class='clear-button' onclick="clearGradeData(11);">Clear</button>
+    
+    <h2>Grade 12 Courses</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Credit Type</th>
+                <th>First Semester</th>
+                <th>Credit Type</th>
+                <th>Second Semester</th>
+            </tr>
+        </thead>
+        <tbody id="courseTable12">
+            <!-- Rows will be populated by JavaScript -->
+        </tbody>
+    </table>
+    <!-- Save Button -->
+    <button id="saveButton12" class='save-button'>Save</button>
+    <!-- Clear Button -->
+    <button id="clearButton12" class='clear-button' onclick="clearGradeData(12);">Clear</button>
+
+    <h2>Results</h2>
+    <h3>Credit Summary</h3>
+    <ul id="creditsByTypeDisplay">
+        <!-- This will be dynamically populated -->
+    </ul>
+    <h3>Things to Change</h3>
+    <ul id="overallSummaryDisplay">
+        <!-- This will be dynamically populated -->
+    </ul>
+    <h3>Prerequisites Check</h3>
+    <ul id="prerequisiteCheckDisplay">
+        <!-- This will be dynamically populated -->
+    </ul>
+    <p id="exemption">* if you have gotten an exemption, taken a skip test, or chosen another pathway, you can disregard the corresponding prerequisite alert shown above</p>
+    <button id = "calculateCreditButton" onclick="updateCreditsByType()">Calculate Results</button>
+
+    <script src="script.js"></script>
+</body>

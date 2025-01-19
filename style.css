@@ -1,0 +1,134 @@
+/* 
+This document, style.css, is a Cascading Style Sheets file that I use to style the elements on my webpage.
+This allows for a more aesthetically pleasing look and more accessible user interface (VERY IMPORTANT!).
+*/
+
+/* styling the banner*/
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #dfdfff;
+    font-size: 75px;
+}
+
+/* styling the tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 5px;
+}
+th, td {
+    border: 2px solid #7f7f7f;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #eeeeee
+}
+tr {
+    background-color: #ffffff;
+}
+
+/* styling the dropdowns */
+select {
+    padding:2px;
+}
+select:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* styling important buttons */
+.save-button {
+    color: black;
+    min-width: 100px;
+    min-height: 50px;
+    margin: 20px;
+    text-align: center;
+    background-color: #aaffaa;
+    border: 2px solid #007f00;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.save-button:hover {
+    background-color: #ccffcc;
+    cursor: pointer;
+}
+
+.clear-button {
+    color: black;
+    min-width: 100px;
+    min-height: 50px;
+    margin: 20px;
+    text-align: center;
+    background-color: #ffaaaa;
+    border: 2px solid #7f0000;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.clear-button:hover {
+    background-color: #ffcccc;
+    cursor: pointer;
+}
+
+.match-button {
+    color: red;
+    margin-left: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    text-align: center;
+}
+.match-button:hover {
+    background-color: #cccccc;
+    cursor:pointer;
+}
+
+/* Styling the results display elements */
+
+#creditsByTypeDisplay {
+    background-color: #ffddaa;
+    max-width: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+#prerequisiteCheckDisplay, #overallSummaryDisplay {
+    background-color: #ffddaa;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+#calculateCreditButton {
+    color: black;
+    min-width: 100px;
+    min-height: 50px;
+    margin: 20px;
+    text-align: center;
+    background-color: #ffddaa;
+    border: 2px solid #cc6600;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#calculateCreditButton:hover {
+    cursor: pointer;
+    background-color: #ffeebb;
+}
+
+#exemption {
+    font-size: 14px;
+    margin-left: 45px;
+}
